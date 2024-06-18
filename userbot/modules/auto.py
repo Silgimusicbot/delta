@@ -40,7 +40,7 @@ async def auto(event):
         DMY = time.strftime("%d.%m.%Y")
         HM = time.strftime("%H:%M")
 
-        Bio = LANG['BIO'].format(tarih=DMY, saat=HM) + LANG['NICK'] 
+        Bio = LANG['BIO'].format(tarih=DMY, saat=HM) 
         await event.client(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
             about=Bio
         ))
