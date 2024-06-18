@@ -49,7 +49,7 @@ async def clone(event):
         await event.edit("Userin profil şəkli tapılmadı.")
 
     await event.delete()
-    await event.respond("Ahaha, səni klonladımmm.", reply_to=reply_message)
+    await event.respond("Ahaha, səni klonladıım.", reply_to=reply_message)
 
 @register(outgoing=True, pattern="^.revert$")
 async def revert(event):
